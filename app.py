@@ -8,6 +8,11 @@ from torchvision import transforms
 from ultralytics import YOLO
 from pathlib import Path
 from src.download_static_esri_3tile_v2 import stitch_tiles
+# import torch
+import torchvision.models as models
+
+# allow the ResNet class for safe unpickling
+torch.serialization.add_safe_globals([models.resnet.ResNet])
 
 # -------------------------------
 # Streamlit UI setup
