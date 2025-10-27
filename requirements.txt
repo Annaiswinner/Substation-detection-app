@@ -1,8 +1,11 @@
 torch
 torchvision
 ultralytics
+opencv-python-headless
 streamlit
 pandas
 Pillow
 requests
 numpy
+
+
